@@ -9,6 +9,7 @@ class Snake:
         self.has_turned = False
         self.create_snake()
         self.head = self.segments[0]
+
     def move(self):
         self.has_turned = False
         for segment_number in range(len(self.segments) - 1, 0, -1):
