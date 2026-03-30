@@ -21,6 +21,9 @@ class Snake:
             new_y = self.segments[segment_number - 1].ycor()
             self.segments[segment_number].goto(new_x, new_y)
         self.head.forward(MOVE_DISTANCE)
+
+
+        
     def turn_right(self):
         if not self.has_turned:
             if self.head.heading() == 90 or self.head.heading() == 270:
